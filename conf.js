@@ -6,9 +6,16 @@ exports.config = {
 
     specs: [
         'tests/features/*.feature'
+        //'tests/homePageSpec.js'
+        //'tests/todo-spec.js'
     ],
     cucumberOpts: {
-        require: 'tests/features/steps/*_steps.js',
+        require: 'tests/features/steps/*.js',
         format: 'pretty'
     }
-}
+    /*multiCapabilities: [{
+        browserName: 'firefox'
+    }, {
+        browserName: 'chrome'
+    }]*/
+};
