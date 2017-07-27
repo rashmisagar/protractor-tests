@@ -6,7 +6,7 @@ var ResultsPage = function() {
     //this.url = 's/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=kindle';
     this.searchbox = element(by.id('twotabsearchtextbox'));
     this.firstItemTitleElement2 = element(by.className('s-access-title'));
-    this.firstItemTitleElement = element(by.id('result_0'));
+    this.firstItemTitleElement = element(by.css('#result_0'));
     this.addToCartBtn = element(by.id('add-to-cart-button'));
     this.addNotification = element(by.id('confirm-text'));
     this.actualCount = element(by.id('s-result-count'));

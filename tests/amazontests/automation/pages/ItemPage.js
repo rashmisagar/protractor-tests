@@ -3,7 +3,7 @@ var basePage = require('./BasePage.js');
 
 var ItemPage = function() {
     this.searchbox = element(by.id('twotabsearchtextbox'));
-    this.productTitle = element(by.id('productTitle'));
+    this.productTitle = element(by.css('#productTitle'));
     this.addToCartBtn = element(by.id('add-to-cart-button'));
     this.addNotification = element(by.id('confirm-text'));
 
