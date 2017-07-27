@@ -21,7 +21,7 @@ var ResultsPage = function() {
     this.names = element.all(by.repeater('row in rows').column('{{row}}'));
 
     /**
-     * search for an item
+     * search for product
      *
      * @param  {string} string
      */

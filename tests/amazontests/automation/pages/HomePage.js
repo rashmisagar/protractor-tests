@@ -22,7 +22,7 @@ var HomePage = function() {
     };
 
     /**
-     * Search blog posts
+     * Search product
      * @param  {string}
      */
     this.searchForItem = function(text) {

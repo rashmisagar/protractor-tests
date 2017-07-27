@@ -7,11 +7,7 @@ var ItemPage = function() {
     this.addToCartBtn = element(by.id('add-to-cart-button'));
     this.addNotification = element(by.id('confirm-text'));
 
-    /**
-     * search for an item
-     *
-     * @param  {string} string
-     */
+
     this.searchFor = function(string) {
         this.searchBox.sendKeys(string);
     };
