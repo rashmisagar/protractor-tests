@@ -10,7 +10,7 @@ This creates some basic tests on Amazon website: http://www.amazon.co.uk
 
 Test project using Protractor with Cucumber and Page Objects
 
-This creates some basic cucumber tests using the Calculator application used in the official Protractor tutorial - http://juliemr.github.io/protractor-demo/
+This creates some basic cucumber tests using the Calculator application at - http://juliemr.github.io/protractor-demo/
 
 
 ## Getting Started
