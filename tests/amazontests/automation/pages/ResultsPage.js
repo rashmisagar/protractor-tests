@@ -10,7 +10,7 @@ var ResultsPage = function() {
     this.addToCartBtn = element(by.id('add-to-cart-button'));
     this.addNotification = element(by.id('confirm-text'));
     this.actualCount = element(by.id('s-result-count'));
-    this.sortDropDown = element(by.id('sort'));
+    this.sortDropDown = element(by.css('#sort'));
     //this.lowestSort = element(by.css('option[value="price-asc-rank"]'));
     this.lowestSort = element(by.cssContainingText('option', 'Price: Low to High'));
     // results...
@@ -32,19 +32,10 @@ var ResultsPage = function() {
     /**
      * sort search results by low to high
      */
-    this.sortbyLowestPrice = function() {
-        element(by.cssContainingText('option', 'Price: Low to High')).click();
+    this.sortbyLowestPrice = function(value) {
+        this.sortDropDown.element(by.cssContainingText('option', value)).click();
     };
 
-    this.selectDropdown = function(element, index, milliseconds) {
-        element.all(by.tagName('option'))
-            .then(function(options) {
-                options[index].click();
-            });
-        if (typeof milliseconds !== 'undefined') {
-            browser.sleep(milliseconds);
-        }
-    };
 
     /**
      * get the name of the first cheapest item in the sorted result

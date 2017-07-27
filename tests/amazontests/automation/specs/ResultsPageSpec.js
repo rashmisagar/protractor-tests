@@ -17,7 +17,7 @@ describe('select cheapest item by price sort', function() {
 
     it('should sort search results by lowest price', function() {
 
-        resultsPage.selectDropdown(resultsPage.sortDropDown, 'Price: Low to High');
+        resultsPage.sortbyLowestPrice('Price: Low to High');
         expect(element(by.cssContainingText('Price: Low to High')).$('option:checked').getText()).to.contain.text('Price: Low to High');
 
 
