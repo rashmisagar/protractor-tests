@@ -1,24 +1,4 @@
-//exports.config = {
-  //  seleniumAddress: 'http://localhost:4444/wd/hub',
 
-  //  framework: 'custom',
-    //frameworkPath: require.resolve('protractor-cucumber-framework'),
-
-  //  specs: [
-        //'specs/calculator-tests/*.feature'
-    //    'automation/feature/*.feature'
-        //'specs/todo-spec.js'
-    //],
-    //cucumberOpts: {
-      //  require: 'specs/calculator-tests/steps/*.js',
-        //format: 'pretty'
-    //}
-    /*multiCapabilities: [{
-        browserName: 'firefox'
-    }, {
-        browserName: 'chrome'
-    }]*/
-//};
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
@@ -41,3 +21,24 @@ exports.config = {
         defaultTimeoutInterval: 30000
     }
 };
+//exports.config = {
+//  seleniumAddress: 'http://localhost:4444/wd/hub',
+
+//  framework: 'custom',
+//frameworkPath: require.resolve('protractor-cucumber-framework'),
+
+//  specs: [
+//'specs/bddtests/*.feature'
+//    'automation/feature/*.feature'
+//'specs/todo-spec.js'
+//],
+//cucumberOpts: {
+//  require: 'specs/bddtests/steps/*.js',
+//format: 'pretty'
+//}
+/*multiCapabilities: [{
+ browserName: 'firefox'
+ }, {
+ browserName: 'chrome'
+ }]*/
+//};
